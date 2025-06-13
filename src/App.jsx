@@ -1,12 +1,14 @@
-import { useState } from 'react'
+import MovieList from "./MovieList/MovieList.jsx";
 import './App.css'
 
 const App = () => {
   return (
-    <div className="App">
-    
-    </div>
-  )
+    <>
+      <div className="App">
+        <MovieList />
+      </div>
+    </>
+  );
 }
 
-export default App
+export default App;
