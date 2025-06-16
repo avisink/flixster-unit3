@@ -1,28 +1,55 @@
+import { useState } from "react";
+import PropTypes from "prop-types";
 import "./Header.css";
 
-function Header() {
+function Header({ onSearch, onSort, searchQuery, sortBy }) {
+  const [input, setInput] = useState(searchQuery);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onSearch(input);
+  }
+
+  const handleClear =(e) => {
+    e.preventDefault();
+    setInput("");
+    onSearch(""); 
+  }
+
+  const handleSortBy = (e) => {
+    onSort(e.target.value);
+  }
+
+
+  const handleEnterClick = (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      onSearch(input);
+    }
+  };
+
     return (
       <>
         <header>
           <h1>Movies</h1>
 
-          <form>
+          <form onSubmit={handleSubmit}>
             <label>Search: </label>
-            <input type="text"></input>
+            <input type="text" value={input} onChange={(e) => setInput(e.target.value)} onKeyPress={handleEnterClick} className="search-input" placeholder="Search for movies..."></input>
             <button type="submit" id="submitBtn">
               Submit
             </button>
 
-            <button type="submit" id="clearBtn">
-              Clear
+            <button type="submit" id="clearBtn" onClick={handleClear}>
+              Clear 
             </button>
             
             <div>
               <label>Sort by</label>
-              <select name="movies" id="movie-sorting">
+              <select name="movies" id="movie-sorting" value={sortBy} onChange={handleSortBy}>
                 <option value="popularity">Popularity</option>
                 <option value="title">Title</option>
-                <option value="rating">Rating</option>
+                <option value="release_date">Release Date</option>
               </select>
             </div>
           </form>
@@ -30,5 +57,12 @@ function Header() {
       </>
     );
 }
+
+Header.propTypes = {
+  onSearch: PropTypes.func.isRequired,
+  onSort: PropTypes.func.isRequired,
+  searchQuery: PropTypes.func.isRequired,
+  sortBy: PropTypes.func.isRequired,
+};
 
 export default Header;
