@@ -34,9 +34,6 @@ const App = () => {
     setSelectedMovie(null);
   }
 
-
-  
-
   return (
     <>
       <Header 
@@ -56,7 +53,7 @@ const App = () => {
       <div className="center">
         <button id="moreBtn" onClick={handleMore}>More</button>
       </div>
-      <footer>Flixster by Ayo 2025</footer>
+      <footer>Flixster by Ayo© 2025</footer>
 
       {isModalOpen && selectedMovie && (
         <MovieModal
