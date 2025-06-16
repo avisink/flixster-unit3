@@ -1,30 +1,37 @@
 import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 import MovieCard from "../MovieCard/MovieCard.jsx";
+import axios from "axios";
 import "../App.css";
 import "../MovieList/MovieList.css";
 
 
 // hook
-function MovieList() {
+function MovieList({ page }) {
     const [movies, setMovies] = useState([]);
 
-    // fucntion to fetch movies - another hok
+    // function to fetch movies - another hook
     useEffect (() => {
         async function fetchMovies() {
-            const apiKey = import.meta.env.VITE_API_KEY;
-            const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`; 
-            const response = await fetch(url);
+            const apiKey = import.meta.env.VITE_API_KEY;      
             try {
-                const data = await response.json();
-                setMovies(data.results);
+                const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&page=${page}`;
+                const response = await axios.get(url);
+                if (page === 1) {
+                  setMovies(response.data.results); 
+                } else {
+                  setMovies((prevMovies) => [
+                    ...prevMovies,
+                    ...response.data.results,
+                  ]);
+                }
             } catch (err) {
                 console.error("Error fetching movie list: ", err);
-            }
-            
+            }          
         }
         fetchMovies();
 
-    }, []);
+    }, [page]);
     
   return (
     <>  
@@ -32,12 +39,14 @@ function MovieList() {
             <MovieCard 
             key= {movie.id}
             movie={movie}
-            title={movie.title}
-            vote_average ={movie.vote_average}
             />
         ))}
     </>
   );
 }
+
+MovieList.propTypes = {
+  page: PropTypes.number.isRequired,
+};
 
 export default MovieList;
