@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../MovieCard/MovieCard.css";
+import "./MovieCard.css";
 import PropTypes from "prop-types";
 import { FaCheckCircle, FaRegCircle } from "react-icons/fa";
 import "react-tooltip/dist/react-tooltip.css";

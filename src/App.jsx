@@ -1,11 +1,8 @@
 import { useState } from "react";
-import MovieList from "./MovieList/MovieList.jsx";
-import Header from "./Header/Header.jsx";
-import MovieModal from "./MovieModal/MovieModal.jsx"
+import MovieList from "./Components/MovieList/MovieList.jsx";
+import Header from "./Components/Header/Header.jsx";
+import MovieModal from "./Components/MovieModal/MovieModal.jsx"
 import "./App.css"
-
-
-import './App.css'
 
 const App = () => {
   const [page, setPage] = useState(1);

@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import MovieCard from "../MovieCard/MovieCard.jsx";
 import axios from "axios";
-import "../App.css";
-import "../MovieList/MovieList.css";
 
 
 // hook
