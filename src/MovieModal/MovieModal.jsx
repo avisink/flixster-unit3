@@ -74,11 +74,9 @@ function MovieModal({ movie, onClose }) {
     );
   }
 
-  const formatRuntime = (minutes) => {
-    const hours = Math.floor(minutes / 60);
-    const mins = minutes % 60;
-    return hours > 0 ? `${hours}h ${mins}m` : `${mins}m`;
-  };
+const formatRuntime = (minutes) => {
+    return `${minutes}m`;
+};
 
   const formatDate = (dateString) => {
     const date = new Date(dateString);
