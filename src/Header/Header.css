@@ -1,4 +1,5 @@
 header, form {
+    color: black;
     text-align: center;
     backdrop-filter: blur(20px);
     margin-bottom: 20px;
@@ -11,7 +12,7 @@ header, form {
   }
 
   #submitBtn, #clearBtn, button {
-    background: #2563eb;
+    background: #26050f;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -20,14 +21,41 @@ header, form {
     cursor: pointer;
     transition: background 0.2s;
     margin: 1rem;
+    width: 6rem;
   }
 
   #submitBtn:hover, button:hover {
-    background: #1e40af;
+    background: #5e4049;
   }
 
   select {
     margin: 0.5rem;
+  }
+
+  input[type="text"], select {
+    border: 1px solid var(--accent);
+    border-radius: 6px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+    background: #fff;
+    color: var(--text);
+    width: auto;
+  }
+  
+  @media (max-width: 320px) {
+    .movie-card-container {
+      width: 250px;
+    }
+
+    .search-bar {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .search-bar form {
+      flex-direction: column;
+    }
   }
   @media (max-width: 600px) {
     .search-bar {
