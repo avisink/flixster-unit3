@@ -127,6 +127,7 @@ Add your response here
 - TMDB Discussion forums
 - TMDB API Documentation
 - React documentation
+- Jsx-ESLint github documentation
 
 ### Shout out
 
