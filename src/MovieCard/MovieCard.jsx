@@ -7,16 +7,13 @@ function MovieCard({ movie, onClick }) {
     ? `https://image.tmdb.org/t/p/w200${movie.poster_path}`
     : null;
   const [liked, setLiked] = useState(false);
-  const [likes, setLikes] = useState(movie.vote_count);
 
   const handleHeartClick =(e) => {
     e.stopPropagation();
-    if (liked) {
-      setLiked(false);
-      setLikes(movie.vote_count);
-    } else {
+    if (!liked) {
       setLiked(true);
-      setLikes(movie.vote_count +1);
+    } else {
+      setLiked(false);
     }
   }
  
@@ -33,7 +30,6 @@ function MovieCard({ movie, onClick }) {
         <span className="heart-icon" role="button" aria-label="like" onClick={handleHeartClick}>
           {liked ? "💚":"🤍"}
         </span>
-        <span className="like-count">{likes}</span>
       </div>
     </div>
   );
