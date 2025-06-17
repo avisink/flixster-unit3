@@ -148,7 +148,7 @@ const formatRuntime = (minutes) => {
                 <br></br>
               </div>
             ) : (
-              <div>No trailer available ☹️</div>
+              <div className="trailerText">No trailer available ☹️</div>
             )}
           </div>
         </div>
