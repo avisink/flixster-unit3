@@ -160,6 +160,13 @@
     border-radius: 12px;
 }
 
+
+.trailerText {
+    position: relative;
+    text-align: center;
+    padding: 12rem;
+}
+
 @media (max-width: 768px) {
     .modal-content {
         width: 95%;
