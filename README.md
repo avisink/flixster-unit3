@@ -124,10 +124,13 @@ Add your response here
 - W3C Schools
 - TMDB Discussion forums
 - TMDB API Documentation
-- React documentation
+- React FaIcons documentation
 - Jsx-ESLint github documentation
+- React Router Documentation
 
 ### Shout out
 
 Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
 - Lucia
+- Keith
+- Jasmine
