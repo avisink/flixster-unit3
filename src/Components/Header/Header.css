@@ -1,3 +1,16 @@
+@font-face {
+	font-family: 'CoreCircus2DIn';
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BFA_1_0.eot');
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BFA_1_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BFA_1_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BFA_1_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BFA_1_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'CoreCircus';
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot');
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.ttf') format('truetype');
+}
+
+
 header, form {
     color: black;
     text-align: center;
@@ -9,6 +22,84 @@ header, form {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(250, 208, 137, 0.15) 50%, rgba(59, 129, 131, 0.15) 100%);
     border-bottom: 1px solid rgba(59, 129, 131, 0.2);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  header div {
+    width: 100%;
+    display: block;
+    padding:0.5rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+ 
+  h1 {
+    padding-bottom: 1rem;
+    font-family: 'CoreCircus', sans-serif;
+    text-transform: uppercase;
+    font-size: 10vw;
+    text-align: center;
+    line-height: 1;
+    margin: 0;
+    color: #61c0c8;
+    text-shadow: 1px 0px 0px #4447fa,
+      0px 1px 0px #4447fa,
+      2px 1px 0px #4447fa,
+      1px 2px 0px #4447fa,
+      3px 2px 0px #4447fa,
+      2px 3px 0px #4447fa,
+      4px 3px 0px #4447fa,
+      3px 4px 0px #4447fa,
+      5px 4px 0px #4447fa,
+      4px 5px 0px #4447fa,
+      6px 5px 0px #4447fa,
+      5px 6px 0px #4447fa,
+      7px 6px 0px #4447fa,
+      6px 7px 0px #4447fa,
+      8px 7px 0px #aff1f9,
+      7px 8px 0px #aff1f9,
+      9px 8px 0px #aff1f9,
+      8px 9px 0px #aff1f9,
+      10px 9px 0px #aff1f9,
+      9px 10px 0px #aff1f9,
+      11px 10px 0px #aff1f9,
+      10px 11px 0px #aff1f9;
+    &:before,
+    &:after {
+      content: attr(data-heading);
+      position: absolute;
+      overflow: hidden;
+      left: 0;
+      top: 0;
+    }
+    &:before {
+      color: white;
+      width: 100%;
+      z-index: 5;
+      font-family: 'CoreCircus2DIn';
+      font-weight: normal;
+    }
+    &:after {
+      z-index: -1;
+      text-shadow: 
+        -1px -1px 0 white,
+        1px -1px 0 white, 
+        -1px 1px 0 white, 
+        1px 1px 0 white, 
+        -3px 3px 2px #4447fb, 
+        -5px 5px 2px #4447fb,
+        -7px 7px 2px #4447fb,
+        -8px 8px 2px #4447fb,
+        -9px 9px 2px #4447fb,
+        -11px 11px 2px #4447fb;
+    }
   }
 
   #submitBtn, #clearBtn, button {
@@ -44,9 +135,6 @@ header, form {
   }
   
   @media (max-width: 320px) {
-    .movie-card-container {
-      width: 250px;
-    }
 
     .search-bar {
       flex-direction: column;

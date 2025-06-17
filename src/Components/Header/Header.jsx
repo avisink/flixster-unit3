@@ -34,22 +34,24 @@ function Header({ onSearch, onSort, searchQuery, sortBy }) {
           <h1>Movies</h1>
           <div>
             <form onSubmit={handleSubmit}>
-              <label>Search: </label>
-              <input
-                type="text"
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-                onKeyPress={handleEnterClick}
-                className="search-input"
-                placeholder="Search for movies..."
-              ></input>
-              <button type="submit" id="submitBtn">
-                Submit
-              </button>
+              <div>
+                <label>Search: </label>
+                <input
+                  type="text"
+                  value={input}
+                  onChange={(e) => setInput(e.target.value)}
+                  onKeyPress={handleEnterClick}
+                  className="search-input"
+                  placeholder="Search for movies..."
+                ></input>
+                <button type="submit" id="submitBtn">
+                  Submit
+                </button>
 
-              <button type="submit" id="clearBtn" onClick={handleClear}>
-                Clear
-              </button>
+                <button type="submit" id="clearBtn" onClick={handleClear}>
+                  Clear
+                </button>
+              </div>
 
               <div>
                 <label>Sort by</label>
