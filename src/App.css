@@ -5,7 +5,22 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
-    background: transparent;
+    background-image:  repeating-radial-gradient(circle at 0 0, transparent 0, #69d4f4 37px), repeating-linear-gradient(#4447fa, #4447fa);
+    background-color: #69d4f4;
+    background-size: 400% 400%, 100% 100%;
+    animation: ripple-bg 600s ease-in-out infinite;
+}
+
+@keyframes ripple-bg {
+  0% {
+    background-position: 0% 50%, 0% 0%;
+  }
+  50% {
+    background-position: 100% 50%, 0% 0%;
+  }
+  100% {
+    background-position: 0% 50%, 0% 0%;
+  }
 }
 
 header {
@@ -20,13 +35,6 @@ header {
   overflow: hidden;
 }
 
-.movie-card-container {
-  display:grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 24px;
-  padding: 40px 20px;
-  margin: 0 auto;
-}
 
 footer {
   text-align: center;
@@ -37,9 +45,10 @@ footer {
   padding: 2rem 1rem 1.5rem;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(250, 208, 137, 0.15) 50%, rgba(59, 129, 131, 0.15) 100%);
   border-bottom: 1px solid rgba(59, 129, 131, 0.2);
+  z-index: 3;
 }
 
-.center {
+.centered {
   display:flex;
   justify-content:center;
   align-items: center;
