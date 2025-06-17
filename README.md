@@ -2,7 +2,7 @@
 
 Submitted by: **Ayomide Isinkaye**
 
-Estimated time spent: **13** hours spent in total
+Estimated time spent: **14** hours spent in total
 
 Deployed Application (optional): [Flixster Deployed Site](https://avisink-flixster.onrender.com/)
 
@@ -100,19 +100,19 @@ Deployed Application (optional): [Flixster Deployed Site](https://avisink-flixst
 
 ### Walkthrough Video
 
-`TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video or gif actually renders and animates when viewing this README. Ensure your walkthrough showcases the presence and/or functionality of all features you implemented above (check them off as you film!). Pay attention to any **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS** checkboxes listed above to ensure graders see the full functionality of your website! (🚫 Remove this paragraph after adding walkthrough video)
+[Walkthrough Video](url to publicly available walkthrough vid)
 
-`ADD_EMBEDDED_CODE_HERE`
+![GIF](url to publicly available gif)
 
 ### Reflection
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Add your response here
+ - Yes and no. We touched on some of the foundational concepts which was very helpful, but [complete this tn]
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
-Add your response here
+- If I had more time, I would try to calmly figure our react routing and make the sidebar which is part of the stretch features. I would have also asked for second opinions on the style of the page, because I am not very good at styling and no matter how I style it, it just never feels right. I would also like to change the overlay which displays the "Favorite" and "Watched" icons, and make it prettier and more appealing. I would like to make the entire site much more appealing overall.
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
