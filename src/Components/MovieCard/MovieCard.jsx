@@ -35,11 +35,11 @@ function MovieCard({ movie, onClick }) {
         {imageUrl ? (
           <img src={imageUrl} alt={`${movie.title} poster`} />
         ) : (
-          <div className="img-placeholder">No Image</div>
+          <div className="img-placeholder">No Image Available</div>
         )}
         <p>{movie.title}</p>
         <p>Movie Rating: {movie.vote_average.toFixed(1)}</p>
-        <div>
+        <div className="favorite-watch">
           <span
             className="heart-icon"
             role="button"
