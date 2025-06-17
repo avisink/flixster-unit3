@@ -103,3 +103,11 @@
       background: linear-gradient(to bottom, transparent, lightgreen);
 
   }
+
+
+  @media (max-width: 590px) {
+    .movie-card-container {
+      width: 250px;
+    }
+  }
+
