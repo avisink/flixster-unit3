@@ -47,7 +47,7 @@ const App = () => {
           onMovieClick = {handleSelectedMovieClick}
           />
       </div>
-      <div className="center">
+      <div className="centered">
         <button id="moreBtn" onClick={handleMore}>More</button>
       </div>
       <footer>Flixster by Ayo© 2025</footer>
