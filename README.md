@@ -102,7 +102,7 @@ Deployed Application (optional): [Flixster Deployed Site](https://avisink-flixst
 
 [Walkthrough Video](https://drive.google.com/file/d/1dMulmxondpqZCRT7rMccng4MY48LUDUc/view?usp=sharing)
 
-![GIF](url to publicly available gif)
+![GIF](https://github.com/avisink/flixster-unit3/blob/main/src/assets/flixster%20(1).gif)
 
 ### Reflection
 
