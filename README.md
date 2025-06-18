@@ -108,15 +108,15 @@ Deployed Application (optional): [Flixster Deployed Site](https://avisink-flixst
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
- - Yes and no. We touched on some of the foundational concepts which was very helpful, but I found that to actually complete the assignment, I relied more on personal research and outside resources. The lessons gave me a good structural understanding and starting point, but when it came to implementing certain features and scaling up the project, I needed to look up additional information and examples on my own. I don’t see this as a major issue, but I wanted to mention that while the labs were a solid foundation, much of the practical knowledge I used came from exploring beyond the provided material.
+ Response: Yes and no. We touched on some of the foundational concepts which was very helpful, but I found that to actually complete the assignment, I relied more on personal research and outside resources. The lessons gave me a good structural understanding and starting point, but when it came to implementing certain features and scaling up the project, I needed to look up additional information and examples on my own. I don’t see this as a major issue, but I wanted to mention that while the labs were a solid foundation, much of the practical knowledge I used came from exploring beyond the provided material.
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
-- If I had more time, I would try to calmly figure our react routing and make the sidebar which is part of the stretch features. I would have also asked for second opinions on the style of the page, because I am not very good at styling and no matter how I style it, it just never feels right. I would also like to change the overlay which displays the "Favorite" and "Watched" icons, and make it prettier and more appealing. I would like to make the entire site much more appealing overall. I would work better on the media queries.
+Response: If I had more time, I would try to calmly figure our react routing and make the sidebar which is part of the stretch features. I would have also asked for second opinions on the style of the page, because I am not very good at styling and no matter how I style it, it just never feels right. I would also like to change the overlay which displays the "Favorite" and "Watched" icons, and make it prettier and more appealing. I would like to make the entire site much more appealing overall. I would work better on the media queries.
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-- For the demo, everything went quite alright. However, I realized about 10 minutes to the demo time, that my form's (search bar section) background was a little weird. I wouyld need to do more studying to figureout how to change box shadows for different sides of a container, and hopefully, thie project just keeps getting better and better as I improve on it.
+Response: For the demo, everything went quite alright. However, I realized about 10 minutes to the demo time, that my form's (search bar section) background was a little weird. I wouyld need to do more studying to figureout how to change box shadows for different sides of a container, and hopefully, thie project just keeps getting better and better as I improve on it.
 
 ### Open-source libraries used
 
