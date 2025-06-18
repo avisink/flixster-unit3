@@ -10,7 +10,7 @@ import { faBookmark as faBookmarkRegular } from "@fortawesome/free-regular-svg-i
 
 function MovieCard({ movie, onClick }) {
   const imageUrl = movie.poster_path
-    ? `https://image.tmdb.org/t/p/w200${movie.poster_path}`
+    ? `https://image.tmdb.org/t/p/w400${movie.poster_path}`
     : null;
   const [liked, setLiked] = useState(false);
   const [isWatched, setIsWatched] = useState(false);

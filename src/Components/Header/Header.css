@@ -38,6 +38,9 @@ header, form {
     display: flex;
     flex-direction: column;
     width: 100%;
+    box-shadow:
+    rgba(0, 0, 0, 0.1) 32px 8px 0px,
+    rgba(0, 0, 0, 0.1) 0px 8px 32px;
   }
  
   h1 {
